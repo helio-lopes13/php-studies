@@ -14,7 +14,7 @@
     $nome = "Jones";
 
     $nomeMaiusculo = function () use ($nome) {
-        return strtoupper($nome);
+        return $$nome = strtoupper($nome);
     };
 
     function retornaStringReversa(string $string) : string {
@@ -31,13 +31,23 @@
 
     echo $tagBrDupla;
 
-    echo "String revertida: " . retornaStringReversa("dog" . "cat") . ".";
+    echo "String normal: ", $strot = "dog" . "cat";
+
+    echo $tagBrDupla;
+
+    echo "String revertida: " . $$strot = retornaStringReversa($strot);
+
+    echo $tagBrDupla;
+
+    var_dump($$strot);
 
     // echo "String com um só: " . ($strot = "E") . ".";
 
     // echo "Substring menos o último: " . substr($strot, 0, -1);
 
     // var_dump(substr($strot, 0, -1));
+
+    include("poo.php");
 
     echo "</pre>";
 ?>
